@@ -3,10 +3,12 @@ public class Auto {
     String modelo;
     int precio;
     Asiento[] asientos;
+    String marca;
     Motor motor;
     int registro;
     static int cantidadCreados;
-    cantidadCreados cantidadAsientos(Asiento[] asientos){
+    
+    int cantidadAsientos(){
         cantidadCreados=asientos.length;
         int i = 0;
         while (asientos.length > 0) {
